@@ -1,9 +1,13 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import FormLayout from "./Components/FormLayout";
 
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Routes>
+        <Route path="/" element={<FormLayout />}></Route>
+      </Routes>
     </>
   );
 }

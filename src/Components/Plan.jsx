@@ -1,3 +1,7 @@
+import arcadeImg from "../assets/images/icon-arcade.svg";
+import advancedImg from "../assets/images/icon-advanced.svg";
+import proImg from "../assets/images/icon-pro.svg";
+
 const Plan = () => {
   return (
     <div>
@@ -10,9 +14,9 @@ const Plan = () => {
         </p>
         <section className="form-container">
           <div className="plans">
-            <label htmlFor="arcade" name='plans-pricing'>
-                <input type="radio" name="plans-pricing" id="arcade" />
-              <img src="" alt="" />
+            <label htmlFor="arcade" name="plans-pricing">
+              <input type="radio" name="plans-pricing" id="arcade" />
+              <img src={arcadeImg} alt="" />
               <div>
                 <span className="plan-title">Arcade</span>
                 <span className="plan-pricing">
@@ -20,9 +24,9 @@ const Plan = () => {
                 </span>
               </div>
             </label>
-            <label htmlFor="advanced" name='plans-pricing'>
-                <input type="radio" name="plans-pricing" id="advanced" />
-              <img src="" alt="" />
+            <label htmlFor="advanced" name="plans-pricing">
+              <input type="radio" name="plans-pricing" id="advanced" />
+              <img src={advancedImg} alt="" />
               <div>
                 <span className="plan-title">Advanced</span>
                 <span className="plan-pricing">
@@ -30,9 +34,9 @@ const Plan = () => {
                 </span>
               </div>
             </label>
-            <label htmlFor="pro" name='plans-pricing'>
-                <input type="radio" name="plans-pricing" id="pro" />
-              <img src="" alt="" />
+            <label htmlFor="pro" name="plans-pricing">
+              <input type="radio" name="plans-pricing" id="pro" />
+              <img src={proImg} alt="" />
               <div>
                 <span className="plan-title">Pro</span>
                 <span className="plan-pricing">

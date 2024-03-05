@@ -2,7 +2,7 @@ const PersonalForm = () => {
   return (
     <div>
       <header>
-        <h1>Personal Info</h1>
+        <h1>Personal info</h1>
       </header>
       <main>
         <p className="description">
@@ -31,7 +31,7 @@ const PersonalForm = () => {
             />
           </div>
           <div className="input-wrapper">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Phone Number</label>
             <input
               type="tel"
               name="phone"

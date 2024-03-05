@@ -5,6 +5,13 @@ import AddOn from "./AddOn";
 import ThankYou from "./ThankYou";
 
 const FormLayout = () => {
+  // const [data, setData] = useState({
+  //   name: '',
+  //   emailAddress: '',
+  //   phoneNumber: 0,
+
+  // })
+
   const [page, setPage] = useState(0);
   const FormArray = [
     <div key={1}>
@@ -28,7 +35,7 @@ const FormLayout = () => {
     setPage((currPage) => currPage + 1);
   }
   return (
-    <>
+    <div className="Page-Container">
       <div className="navigation">
         <nav>
           <div className={page === 0 ? "isActive nav-links" : "nav-links"}>
@@ -62,7 +69,7 @@ const FormLayout = () => {
         </nav>
       </div>
       <div className="main-form">
-        <form action="/">{FormArray[page]}</form>
+        <form action="#">{FormArray[page]}</form>
       </div>
       <div className="footer">
         <button
@@ -76,7 +83,7 @@ const FormLayout = () => {
           {page + 1 === FormArray.length ? "Submit" : "Next Step"}
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
